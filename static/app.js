@@ -677,17 +677,6 @@ const renderMap = () => {
         )
       )
     } else { // enemy
-      if (playerObj.team) {
-        label = `${playerObj.team}`
-      } else if (playerObj.name) {
-        label = playerObj.name
-      } else {
-        label = `<${playerObj.name}>`
-      }
-      if (playerObj.kills) {
-        label += `|杀:${playerObj.kills}|`
-      }
-    }
     if (playerObj.health != null) {
       label += `|血:${Math.floor(playerObj.health)}|`
     }
